@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-GURU</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        .menu-bar{
+            display: grid;
+            max-width: 100%;
+            
+            margin: 40px 60PX; 
+            
+        }
+        a{
+            text-decoration: none;
+            color:black;
+            font-weight: bold;
+        }
+        a:hover{
+            color: #f64a00;
+        }
+        .navigation-bar{
+            width:100%;
+            display: grid;
+            grid-template-columns: 30% 50% 20%;
+           justify-content: space-between;
+           align-items: center;
+            gap: 20px;
+        }.nav-logo{
+            display: flex;
+            flex-direction: row;
+        }
+        .nav-options{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            justify-content: center;
+        }.nav-button{
+            text-align: center;
+        }
+        
+        .logo{
+            padding: 15px;
+            height: 40px;
+            width: 60px;
+        }.large-b1{
+            background-color: white;
+            width: 100px;
+            height: 40px;
+            border: 1px solid black;
+            font-weight: bold;
+        }
+        .main{
+            max-width:100%;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            margin: 40px 60px;
+        }
+        .inner-section{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        
+        }.main-heading{
+            font-size: 65px;
+        }.large-b2{
+            background-color: #f64a00;
+            color: white;
+            width: 80%;
+            height: 70px;
+            border: none;
+        }.large-b3{
+            width: 80%;
+            height: 70px;
+            background-color: white;
+            border: 2px solid black;
+        }.main-p{
+            border-left:2px solid black;
+            padding: 20px;
+            font-size: 26px;
+        }.main-images{
+            position: relative;
+            max-width: 100%;
+
+        }.img1{
+            position: absolute;
+            z-index: -1;
+        }.img2{
+            position:absolute;
+            z-index: 0;
+            left: 20%;
+            top: 10%;
+            
+        }.img3{
+            position: absolute;
+            z-index: 3;
+            left: 20%;
+            
+            
+        }.img4{
+            position: absolute;
+            z-index: 2;
+            left: 32%;
+            top: 13%;width:40%;
+            height: 75%;
+            
+        }
+        .img5{
+            position: absolute;
+            top: 100%;
+            left: 10%;
+            z-index: 4;
+            
+        }.img6{
+            position: absolute;
+            z-index: 3;
+            top: 80%;
+            left: 80%;
+        }.img-m{
+            width:60%;
+            height: 80%;
+        }
+        .footer{
+            margin-top: 50px;
+            display: grid;
+            width: 100%;
+            height: 50vh;
+            grid-template-columns:20% 20% 20% 20% ;
+            background-color: #030b16;
+            color: white;
+            justify-content: space-around;
+            align-items: center;
+
+            
+        }.footer-s{
+            display: grid;
+            grid-template-columns: 80%;
+        }
+        .footer p{
+            opacity: 0.7;
+        }.img1-f{
+            width: 50px;
+            height: 50px;
+            background-color: aqua;
+            border-radius: 20px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }.img2-f{
+            width: 50px;
+            height: 50px;
+            background-color: #ff5100;
+            border-radius: 20px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }.img3-f{
+            width: 50px;
+            height: 50px;
+            background-color: #1900ff;
+            border-radius: 20px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }.smallScreen-menubar{
+            display: none;
+            grid-template-columns: 15% 70% 15%;
+            justify-items: center;
+            align-items: center;
+            max-width: 100%;
+        }.small-heading{
+            display: flex;
+            flex-direction: row;
+        }.inner-section-s{
+            display: none;
+        }.menu-icon,.profile,.logo-s{
+            width: 50x;
+            height: 40px;
+        }.logo-s{
+            padding: 10px;
+        }
+        @media screen and (max-width:750px) {
+            .smallScreen-menubar{
+                
+                margin:20px 30px ;
+                display: grid;
+            }.menu-bar{
+                display: none;
+            }.inner-section{
+                display: none;
+            }.main{
+                display: grid;
+                margin: 20px 30px;
+                grid-template-columns: 100%;
+            }.footer{
+                display: grid;
+                grid-template-columns: 100%;
+                justify-content: center;
+                height: 100%;
+                text-align: center;
+            }.inner-section-s{
+                margin-top: 50px;
+                display:grid ;
+                grid-template-columns: 40% 40%;
+                justify-content: center;
+            }.main-images{
+                height: 500px;
+            }.footer-s{
+                display: grid;
+                grid-template-columns: 60%;
+                justify-content: center;
+                justify-items: center;
+                text-align: ceter;
+                padding: 20px;
+
+        }.main-heading{
+            font-size: 45px;
+            
+        }.main-p{
+            font-size: 20px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <!--Menu bar section of strat-->
+   <section class="menu-bar">
+    <nav >
+        <div class="navigation-bar">
+        <div class="nav-logo"><img src="./assets/logo.png" alt="logo" class="logo"><h1 style="font-size: x-large;">E GURU</h1></div>
+        <div class="nav-options"><a href="#">Home</a><a href="#">About Us</a><a href="#">Features</a><a href="#">How it works</a></div>
+        <div class="nav-button"><button class="large-b1">Sign Up</button></div>
+        </div>
+    </nav>
+   </section>
+   <!--Menu bar section for end-->
+   <section class="smallScreen-menubar">
+    <img src="assets/menu-icon.png" alt="menu-icon" class="menu-icon">
+    <div class="small-heading"><img src="assets/logo.png" alt="logo" class="logo-s"><h1>E GURU</h1></div>
+    <img src="assets/user-profile.png" alt="user-profile" class="profile">
+   </section>
+   <section class="main">
+    <div>
+        <h1 class="main-heading">STUDY FORM HOME WITH EXPERT</h1>
+        <p class="main-p">A learning system base on formalised teaching with the help of resources.</p>
+        <div class="inner-section">
+        <button class="large-b2">Get Started</button>
+        <button class="large-b3">Learn More</button>
+        <img src="assets/curve-arrow.png" alt="arrow">
+        </div>
+    </div>
+    <div class="main-images">
+        <img class="img1" src="assets/orange-arrow.png" alt="orange-arrow">
+        <img class="img-m img2" src="assets/main-image-bg.png" alt="main-image-bg">
+        <img class="img-m img3" src="assets/main-image-pattern.png" alt="main-image-pattern">
+        <img class="img4" src="assets/main-image.png" alt="main-image">
+        <img class="img5" src="assets/green-arrow.png" alt="green-arrow">
+        <img class="img6" src="assets/circle.png" alt="circle">
+        
+    </div>
+    <div class="inner-section-s">
+        <button class="large-b2">Get Started</button>
+        <div>
+        <button class="large-b3">Learn More</button>
+        <img src="assets/curve-arrow.png" alt="arrow">
+        </div>
+        </div>
+   </section>
+   <div class="footer">
+    <div class="footer-s">
+        <h1 style="font-size:36px;">WHY WE ARE THE BEST</h1>
+        <P>A learning system base on formalised teaching with the help of...</P>
+    </div>
+    <div class="footer-s">
+        <div class="img1-f"><img src="assets/vector3.png" alt="teaching" class="footer-img"></div>
+        <h2>EXPERT TEACHER</h2>
+        <p>A learning system base on formalised teaching </p>
+    </div>
+    <div class="footer-s">
+        <div class="img2-f"><img src="assets/vector2.png" alt="course" class="footer-img"></div>
+        <h2>ONLINE COURSE</h2>
+        <p>A learning system base on formalised teaching </p>
+    </div>
+    <div class="footer-s">
+        <div class="img3-f"><img src="assets/vector1.png" alt="24/7" class="footer-img"></div>
+        <h2>24/7 SUPPORT</h2>
+        <p>A learning system base on formalised teaching</p>
+    </div>
+</div>
+</body>
+</html>
